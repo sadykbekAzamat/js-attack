@@ -196,7 +196,7 @@ async function runLoadTest() {
   while (isRunning) {
     const requestStartTime = Date.now();
 
-    makeRequest().catch((err) => {
+    await makeRequest().catch((err) => {
       console.error("Критическая ошибка:", err);
     });
 
