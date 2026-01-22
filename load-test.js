@@ -4,7 +4,7 @@ const http = require("http");
 const config = {
   baseUrl: "https://api.aliya.kz-beta.pp.ua",
   endpoint: "/auth/",
-  requestsPerSecond: 1000,
+  requestsPerSecond: 50,
   duration: 60,
   method: "GET",
   headers: {
@@ -125,7 +125,7 @@ function displayStats() {
   console.log("═══════════════════════════════════════════════════");
   console.log(`URL:           ${config.baseUrl}${config.endpoint}`);
   console.log(`Метод:         ${config.method}`);
-  console.log(`Цель:          ${config.requestsPerSecond} req/s`);
+  console.log(`Цель:          1000 req/s`);
   console.log(
     `Длительность:  ${config.duration > 0 ? config.duration + "s" : "∞"}`,
   );
