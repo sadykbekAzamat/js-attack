@@ -3,7 +3,7 @@ const http = require("http");
 
 const config = {
   baseUrl: "https://api.aliya.kz-beta.pp.ua",
-  endpoint: "/api/health",
+  endpoint: "/auth/login",
   requestsPerSecond: 50,
   duration: 60,
   method: "GET",
