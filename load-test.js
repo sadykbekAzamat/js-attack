@@ -4,7 +4,7 @@ const http = require("http");
 const config = {
   baseUrl: "https://api.aliya.kz-beta.pp.ua",
   endpoint: "/auth/",
-  requestsPerSecond: 50,
+  requestsPerSecond: 1000,
   duration: 60,
   method: "GET",
   headers: {
